@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+:root {
+  --tamanho: 1440px;
+  --verde: #5ca720;
+  --verde__claro: #6ebd2e;
+  --preto: #161616;
+  --cinza: #a5a1a1;
+  --cinza__footer: #f9f9f9;
+}
+/* Conteiner do Menu */
+header {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  padding: 3.6em 1.8em;
+  align-items: center;
+  max-width: 1440px;
+  height: 94px;
+}
+/* Logo Do Menu */
+.logo a {
+  padding: 10px;
+  gap: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  color: var(--preto);
+}
+/* Escrita do Menu */
+.logo a p {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+/* Menu de Navegação */
+
+.menu {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+}
+/* Cada Item do Menu de Navegação */
+
+.menu__item {
+  padding: 10px;
+}
+.menu__item img {
+  display: block;
+  max-width: 24px;
+}
+
+/* Banner */
+
+.banner {
+  overflow-x: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.banner-mobile {
+  display: none;
+}
+
+/* Media para Modificar o Banner do Shop ao Tamanho do Dispositivo */
+@media (max-width: 415px) {
+  .banner-mobile {
+    display: block;
+  }
+  .banner-desktop {
+    display: none;
+  }
+}
+
+/* Produtos Do Shop */
+
+.produtos {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* Conteiner de Quantidade De Produtos */
+.promocao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 0.1px solid var(--cinza);
+  padding: 1.6em 1.8em;
+}
+/* Style para o Primeiro Filho do P */
+.promocao p:nth-child(1) {
+  font-weight: 700;
+  font-size: 1em;
+}
+/* Style para o Segundo Filho do P */
+.promocao p:nth-child(2) {
+  font-weight: 510;
+  font-size: 1em;
+}
+
+/* Conteiner itens-Promoção */
+.itens-promocao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 60px 0px;
+  gap: 95px 195px;
+  margin: 0 auto;
+  max-width: var(--tamanho);
+}
+
+/* Itens do Contiener Itens-Promoção */
+.itens-promocao > div {
+  max-width: 303px;
+  max-height: 395px;
+}
+/* Paragrafo do Produtos-item */
+.produto-item p {
+  margin: 23px 0px 11px 0px;
+  font-weight: 500;
+  font-size: 1.4em;
+  line-height: 1.5rem;
+
+  color: var(--preto);
+}
+/* Essa Class esta dentro do H3 do Produtos-item */
+.moeda {
+  font-size: 0.9em;
+  line-height: 1.3rem;
+  font-weight: 600;
+
+  color: var(--preto);
+}
+/* H3 do Produto-Item(Sem o Span) */
+.produto-item h3 {
+  font-weight: 700;
+  font-size: 1.5625em;
+  line-height: 1.5rem;
+
+  color: var(--verde);
+}
+/* Modificar o Tamanho dos Itens do Flex box apos 450px de Largura */
+@media (max-width: 450px) {
+  .itens-promocao > div {
+    max-width: 128px;
+    max-height: 128px;
+  }
+
+  .itens-promocao {
+    margin: 10px 5px 30px 5px;
+    gap: 65px 75px;
+  }
+  .produto-item p {
+    font-size: 0.75em;
+    margin: 5px 0px;
+  }
+  .moeda {
+    font-size: 0.75em;
+  }
+  .produto-item h3 {
+    font-size: 0.875em;
+  }
+  .contato {
+    display: flex;
+    align-items: unset !important;
+    flex-direction: column;
+    padding: 0px 0px 15px 0px;
+  }
+  .conteiner-email form {
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .botao-submit {
+    display: block;
+    width: 100%;
+    border-radius: 3px !important;
+  }
+  .conteiner-email form label p:nth-child(1) {
+    font-size: 0.875em !important;
+  }
+  .contato-termos a {
+    font-size: 0.875em !important;
+  }
+  #email {
+    flex: 1 1 260px;
+    width: 381px !important;
+  }
+  .redes__sociais img {
+    max-height: 23px;
+  }
+  .meio__pagamentos img {
+    max-width: 29px !important;
+  }
+  .meio__pagamentos img:nth-child(2) {
+    max-width: 17px !important;
+  }
+}
+
+/* Contato */
+
+.contato {
+  padding: 40px 15px;
+  max-width: 1440px;
+  margin: 15px auto;
+  border-top: 0.1px solid var(--cinza);
+  border-bottom: 0.1px solid var(--cinza);
+
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contato-termos ul {
+  line-height: 1.5em;
+  list-style: none;
+}
+
+.contato-termos a {
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.25em;
+  color: var(--preto);
+}
+.contato-termos a:hover {
+  color: var(--verde__claro);
+}
+.conteiner-email form label p:nth-child(1) {
+  margin: 0px 0px 10px 0px;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+.conteiner-email form {
+  display: flex;
+  align-items: flex-end;
+}
+#email {
+  border-radius: 1.5px;
+  border: 1px solid var(--cinza__footer);
+  width: 300px;
+  height: 54px;
+  padding: 15px 0px 15px 13px;
+}
+
+#email::placeholder {
+  font-size: 1.25em;
+  color: #a8a4a4;
+}
+
+.botao-submit {
+  cursor: pointer;
+  border-style: none;
+  background: var(--verde);
+  color: #fff;
+  border-radius: 0px 5px 5px 0px;
+
+  font-size: 1.25em;
+  font-weight: 800;
+  padding: 15px 33px;
+}
+
+footer {
+  display: flex;
+  max-width: 1440px;
+  height: 120px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+.redes__sociais {
+  display: flex;
+}
+.redes__sociais a {
+  padding: 10px;
+}
+
+.meio__pagamentos {
+  display: flex;
+  gap: 20px;
+}
