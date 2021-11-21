@@ -150,8 +150,14 @@ header {
 
   color: var(--verde);
 }
+@media(max-width:950px) and ( min-width:700px ){
+	.itens-promocao {
+		gap:65px 75px !important;
+	}
+}
+
 /* Modificar o Tamanho dos Itens do Flex box apos 450px de Largura */
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .itens-promocao > div {
     max-width: 128px;
     max-height: 128px;
@@ -159,7 +165,7 @@ header {
 
   .itens-promocao {
     margin: 10px 5px 30px 5px;
-    gap: 65px 75px;
+    gap: 65px 75px !important ;
   }
   .produto-item p {
     font-size: 0.75em;
@@ -176,6 +182,10 @@ header {
     align-items: unset !important;
     flex-direction: column;
     padding: 0px 0px 15px 0px;
+  }
+  .conteiner-email {
+	 display:flex;
+	 justify-content:center;
   }
   .conteiner-email form {
     margin: 20px 0px 0px 0px;
@@ -195,7 +205,7 @@ header {
   }
   #email {
     flex: 1 1 260px;
-    width: 381px !important;
+    width: 290px !important;
   }
   .redes__sociais img {
     max-height: 23px;
