@@ -1,6 +1,13 @@
+
 ## DESKTOP
 
 <div align="center">
-	<img src="./assets/banner.png">
-	<img src="./assets/banner-mobile.png">
-<div>
+	<img src="./design/desktop.png">
+</div>
+
+## MOBILE
+
+	
+<div align="center">
+	<img src="./design/mobile.png">
+</div>
